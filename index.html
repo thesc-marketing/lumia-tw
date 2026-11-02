@@ -133,6 +133,11 @@ h2{font-size:26px;font-weight:900;line-height:1.35;margin:0;letter-spacing:-.01e
 .pcard{display:grid;grid-template-columns:1fr 76px;gap:0 14px;align-items:start}
 .pcard>img{grid-column:2;grid-row:1;aspect-ratio:1;object-fit:cover;border-radius:12px}
 .pcard .won{grid-column:1/-1}
+.pba{grid-column:1/-1;position:relative;margin-top:14px;border-radius:12px;overflow:hidden}
+.pba img{display:block;width:100%;aspect-ratio:2/1.2;object-fit:cover}
+.pba .l,.pba .r{position:absolute;bottom:8px;font-size:12px;font-weight:700;color:#fff;background:rgba(0,0,0,.55);border-radius:99px;padding:3px 10px}
+.pba .ai-tag{position:absolute;top:8px;left:8px;background:rgba(220,38,38,.92);color:#fff;font-size:10px;font-weight:700;padding:1px 7px;border-radius:4px}
+.pba .l{left:8px}.pba .r{left:calc(50% + 8px);background:var(--coral-d)}
 
 /* 후기 자리 (번역 끄면 같이 숨겨짐) */
 .todo{display:none}
@@ -193,7 +198,7 @@ h2{font-size:26px;font-weight:900;line-height:1.35;margin:0;letter-spacing:-.01e
 
 <section class="price">
   <span class="kicker">價格先看清楚</span><span class="ko">가격부터 확인</span>
-  <h2>這個價格，<br>是院長親自打的</h2><span class="ko">이 가격에, 원장님이 직접 시술해요</span>
+  <h2>省下來的錢，<br>機票都賺回來了</h2><span class="ko">아낀 돈으로 비행기값 뽑아요</span>
   <div class="plist">
     <div class="pcard">
       <img src="img/p_onda10.jpg" alt="ONDA 拉提 局部施打">
@@ -201,6 +206,7 @@ h2{font-size:26px;font-weight:900;line-height:1.35;margin:0;letter-spacing:-.01e
       <h3>ONDA 拉提 10,000J</h3>
       <div class="desc">沒做過 ONDA？先從臉頰、下巴局部試起<span class="ko">온다 처음이면 볼·턱 부분부터 가볍게</span></div></div>
       <div class="won">₩39,000<span>約 NT$890</span></div>
+      <div class="pba"><img src="img/pba_onda10.jpg" alt="ONDA 拉提 局部 施打前後" loading="lazy"><span class="l">施打前</span><span class="r">施打後</span><span class="ai-tag">AI 예시 · 실제 사진으로 교체</span></div>
     </div>
     <div class="pcard">
       <img src="img/p_rejuran.jpg" alt="麗珠蘭水光 施打">
@@ -208,6 +214,7 @@ h2{font-size:26px;font-weight:900;line-height:1.35;margin:0;letter-spacing:-.01e
       <h3>麗珠蘭水光 2cc</h3>
       <div class="desc">毛孔、細紋、暗沉一次顧，第一次做就選這個劑量<span class="ko">모공·잔주름·칙칙함 한 번에, 처음이면 이 용량</span></div></div>
       <div class="won">₩99,000<span>約 NT$2,250</span></div>
+      <div class="pba"><img src="img/pba_rejuran.jpg" alt="麗珠蘭水光 施打前後" loading="lazy"><span class="l">施打前</span><span class="r">2次後</span><span class="ai-tag">AI 예시 · 실제 사진으로 교체</span></div>
     </div>
     <div class="pcard">
       <img src="img/p_onda60.jpg" alt="ONDA 拉提 全臉施打">
@@ -215,6 +222,7 @@ h2{font-size:26px;font-weight:900;line-height:1.35;margin:0;letter-spacing:-.01e
       <h3>ONDA 拉提 60,000J</h3>
       <div class="desc">全臉加下顎線，一次到位<span class="ko">얼굴 전체 + 턱선까지 한 번에</span></div></div>
       <div class="won">₩234,000<span>約 NT$5,320</span></div>
+      <div class="pba"><img src="img/pba_onda.jpg" alt="ONDA 拉提 全臉 施打前後" loading="lazy"><span class="l">施打前</span><span class="r">2次後</span><span class="ai-tag">AI 예시 · 실제 사진으로 교체</span></div>
     </div>
   </div>
   <ul class="pnote">
