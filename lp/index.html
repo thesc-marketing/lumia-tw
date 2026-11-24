@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>首爾江南 首訪優惠</title>
+<meta name="description" content="首爾江南・新論峴站步行3分鐘。麗珠蘭鮭魚針、ONDA超微波、美版極線音波首訪優惠，加LINE中文諮詢。">
+<!-- 2026-11-24 Claude: 영미권 XERF 시술형 랜딩(성과 좋음)을 그대로 바꿔 만든 대만 번체판. 사용자: "세르프 광고 잘되니까 이걸 바꾸라고". -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1c0308;--bg2:#2a0710;--ac:#ff9aa8;--deep:#a51f3a;--ink:#1c1a19;--body:#4a4543;--sub:#8a8380;--line:#eee6e3;--cream:#fbf5f3;--wa:#25d366;--sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;--serif:"Playfair Display",Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:#e7e4e1;font-family:var(--sans);color:var(--ink);line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:480px;margin:0 auto;background:#fff;padding-bottom:118px;position:relative;overflow:clip}
+
+/* 맨 위 마감 띠 */
+.urg{position:sticky;top:0;z-index:20;background:var(--deep);color:#fff;font-size:14px;font-weight:700;text-align:center;padding:10px 10px;letter-spacing:.01em}
+.urg b{font-variant-numeric:tabular-nums;font-size:16px;font-weight:900;color:#ffd9de;margin:0 2px}
+
+/* 표지 */
+.hero{position:relative;background:var(--bg);color:#fff;padding-bottom:26px}
+.hero .top{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:14px 18px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;opacity:.92}
+.hero .top b{font-weight:700;letter-spacing:.16em}
+.hero .ph{position:relative;aspect-ratio:390/415;overflow:hidden}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.hero .ph::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:linear-gradient(transparent,var(--bg))}
+.hero .ai{position:absolute;top:44px;right:12px;z-index:3;font-size:9.5px;background:rgba(0,0,0,.45);padding:3px 7px;border-radius:20px;opacity:.85}
+.hero .copy{position:relative;z-index:2;margin-top:-104px;padding:0 22px}
+.hero .lead{font-size:16px;line-height:1.35;font-weight:500;opacity:.95;max-width:62%}
+.hero h1{font-size:clamp(36px,10.6vw,43px);line-height:1.02;font-weight:900;letter-spacing:-.03em;margin-top:8px}
+.hero h1 em{font-style:normal;color:var(--ac)}
+.badge{position:absolute;right:16px;top:-22px;width:112px;height:112px;border-radius:50%;background:var(--ac);color:#3a0612;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transform:rotate(8deg);box-shadow:0 6px 24px rgba(0,0,0,.45)}
+.badge small{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.badge b{font-size:25px;font-weight:900;letter-spacing:-.03em;line-height:1.05}
+.badge i{font-style:normal;font-size:11px;font-weight:700}
+.pricebox{padding:4px 22px 0}
+.pricebox .row{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:16px}
+.pricebox .now{font-size:36px;font-weight:900;letter-spacing:-.03em;color:var(--ac);line-height:1.1}
+.pricebox s{font-size:14.5px;opacity:.6}
+.pricebox p{font-size:13px;opacity:.85;margin-top:4px}
+.cdl{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-top:18px}
+.cd{display:flex;align-items:flex-start;margin-top:4px}
+.cd span{position:relative;padding-right:30px;font-size:46px;font-weight:800;letter-spacing:-.04em;line-height:1.05;font-variant-numeric:tabular-nums;color:#fff}
+.cd span+span::before{content:":";position:absolute;left:-21px;top:-3px;font-weight:400;color:var(--ac);opacity:.9}
+.cd span:last-child{padding-right:0}
+.cd span small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:5px;padding-left:2px}
+.cta2{display:flex;gap:8px;margin-top:8px}
+.ctaline{margin-top:18px;font-size:13.5px;font-weight:700;text-align:center;letter-spacing:-.01em}
+.ctaline b{color:var(--deep)}
+.hero .ctaline b{color:var(--ac)}
+.btn{flex:1 1 0;min-width:0;height:52px;border-radius:12px;color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.wa{background:var(--wa)}
+.btn.ig{background:linear-gradient(45deg,#f9a13a,#e1306c 55%,#833ab4)}
+.rate0{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:12.5px;opacity:.92}
+.rate0 i{font-style:normal;color:#f2b84b;letter-spacing:1px}
+
+/* 본문 공통 */
+.sec{padding:40px 22px}
+.sec.cream{background:var(--cream)}
+.sec.dark{background:var(--bg);color:#fff}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--deep)}
+.dark .eyebrow{color:var(--ac)}
+h2{font-size:27px;line-height:1.16;font-weight:800;letter-spacing:-.025em;margin-top:8px}
+h2 em{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--deep);letter-spacing:-.01em}
+.dark h2 em{color:var(--ac)}
+.s{font-size:14px;color:var(--body);margin-top:10px}
+.dark .s{color:rgba(255,255,255,.78)}
+.fine{font-size:11.5px;color:var(--sub);margin-top:12px;line-height:1.5}
+.dark .fine{color:rgba(255,255,255,.55)}
+
+/* 고민 */
+.worry{list-style:none;margin-top:20px;display:grid;gap:10px}
+.worry li{background:#fff;border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:14px 16px;font-size:15px;font-weight:600;box-shadow:0 2px 10px rgba(60,20,20,.04)}
+.worry li:nth-child(2){border-radius:16px 16px 4px 16px;margin-left:28px}
+.worry li span{display:block;font-size:12.5px;font-weight:500;color:var(--sub);margin-top:2px}
+.answer{margin-top:18px;font-size:17px;font-weight:800;text-align:center;color:var(--deep)}
+
+/* 세르프 3가지 */
+.pts{list-style:none;margin-top:22px;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.14)}
+.pts li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.pts i{font-style:normal;font-family:var(--serif);font-size:30px;color:var(--ac);line-height:1}
+.pts b{font-size:17px;font-weight:800;display:block}
+.pts span{font-size:13.5px;color:rgba(255,255,255,.75);display:block;margin-top:3px}
+.dev{margin-top:22px;border-radius:14px;overflow:hidden;position:relative}
+.dev img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 36%}
+.dev figcaption{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.55);color:#fff;font-size:11.5px;padding:4px 9px;border-radius:20px}
+
+/* 원리 그림 */
+.depth{margin-top:22px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.depth .lay{display:grid;grid-template-columns:92px 1fr;align-items:center;gap:12px;padding:14px}
+.depth .lay+.lay{border-top:1px dashed var(--line)}
+.depth .lay b{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;border-radius:20px;padding:5px 0;text-align:center}
+.depth .l1{background:#fff3f1}.depth .l1 b{background:#f3a8a0}
+.depth .l2{background:#ffe6e3}.depth .l2 b{background:#e2707a}
+.depth .l3{background:#fbd3d2}.depth .l3 b{background:var(--deep)}
+.depth span{font-size:13.5px;color:var(--ink);font-weight:600}
+.depth small{display:block;font-size:12px;color:var(--body);font-weight:400;margin-top:1px}
+.freq{display:flex;gap:8px;margin-top:14px}
+.freq div{flex:1;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center;background:#fff}
+.freq b{display:block;font-size:20px;font-weight:900;letter-spacing:-.02em;color:var(--deep)}
+.freq span{font-size:12px;color:var(--body)}
+
+/* 비교표 */
+.cmp{width:100%;border-collapse:collapse;margin-top:20px;font-size:13px;background:#fff;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.cmp th{padding:11px 8px;font-size:12px;font-weight:800;background:#f3eeec;color:var(--body)}
+.cmp th:last-child{background:var(--deep);color:#fff}
+.cmp td{padding:12px 8px;text-align:center;border-top:1px solid var(--line);color:var(--body);vertical-align:middle;width:50%}
+.cmp td:last-child{color:var(--ink);font-weight:700;background:#fff8f7}
+.cmp td small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--sub);margin-bottom:2px}
+
+/* 시술 과정 */
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.steps figure{position:relative;border-radius:12px;overflow:hidden;background:#000}
+.steps img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.steps figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 10px 10px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;font-size:13px;font-weight:700;line-height:1.25}
+.steps figcaption i{font-style:normal;display:block;font-family:var(--serif);font-size:20px;color:var(--ac);line-height:1}
+
+/* 전후 */
+.ba{display:grid;gap:14px;margin-top:22px}
+.ba .pair{display:grid;grid-template-columns:1fr 1fr;gap:3px;border-radius:14px;overflow:hidden;position:relative}
+.ba .pair div{position:relative}
+.ba img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ba span{position:absolute;left:8px;bottom:8px;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.6);padding:3px 8px;border-radius:20px}
+.ba .pair div:last-child span{background:var(--deep)}
+.ba .tag{position:absolute;top:8px;right:8px;z-index:2;font-size:9.5px;background:rgba(0,0,0,.55);color:#fff;padding:3px 7px;border-radius:20px}
+.ba p{font-size:13.5px;font-weight:700;margin-top:8px}
+
+/* 평점 */
+.rate{margin-top:20px;border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center;background:#fff}
+.rate i{font-style:normal;color:#f2a900;font-size:22px;letter-spacing:3px}
+.rate b{display:block;font-size:46px;font-weight:900;letter-spacing:-.03em;line-height:1.1;margin-top:4px}
+.rate span{font-size:13.5px;color:var(--body)}
+.rvs{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:16px -22px 0;padding:0 22px 4px;scrollbar-width:none}
+.rvs::-webkit-scrollbar{display:none}
+.rvs figure{flex:0 0 86%;scroll-snap-align:center;margin:0}
+.rvs img{width:100%;border:1px solid var(--line);border-radius:14px;background:#fff}
+.rvhint{font-size:12px;color:var(--sub);text-align:center;margin-top:8px}
+.mapimg{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;border:1px solid var(--line);margin-top:16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;justify-content:center}
+.chips span{font-size:12.5px;font-weight:600;border:1px solid var(--line);border-radius:20px;padding:6px 11px;background:#fff;color:var(--body)}
+
+/* 이벤트가 */
+.ev{margin-top:20px;border:1px solid rgba(255,255,255,.18);border-radius:16px;overflow:hidden}
+.ev .r{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;font-size:14px;color:rgba(255,255,255,.75)}
+.ev .r+.r{border-top:1px solid rgba(255,255,255,.14)}
+.ev .r b{font-size:16px;color:#fff}
+.ev .r.hit{background:var(--ac);color:#3a0612;font-weight:800}
+.ev .r.hit b{font-size:24px;font-weight:900;color:#3a0612;letter-spacing:-.02em}
+.dark .cdl{text-align:center}
+.dark .cd{justify-content:center}
+.dead{text-align:center;font-size:15px;font-weight:800;margin-top:20px}
+.dead em{font-style:normal;color:var(--ac)}
+
+/* 예약 순서 */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
+.flow div{border:1px solid var(--line);border-radius:12px;padding:14px 8px;text-align:center;background:#fff}
+.flow b{display:block;font-family:var(--serif);font-size:24px;color:var(--deep);line-height:1}
+.flow span{display:block;font-size:12.5px;font-weight:600;margin-top:6px;line-height:1.3}
+
+/* FAQ */
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{margin-top:14px;border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:15px 22px 15px 0;font-size:15px;font-weight:700;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:2px;top:12px;font-size:20px;font-weight:400;color:var(--sub)}
+details[open] summary::after{content:"–"}
+details p{font-size:14px;color:var(--body);padding:0 0 16px}
+
+/* 병원 정보(짧게) */
+.clinic{margin-top:18px}
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:18px -22px 0;padding:0 22px 4px;scrollbar-width:none}
+.gal::-webkit-scrollbar{display:none}
+.gal figure{flex:0 0 82%;margin:0;scroll-snap-align:center}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;display:block}
+.gal figcaption{font-size:13px;color:var(--body);margin-top:7px}
+.loc{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.loc span,.loc a{font-size:12.5px;padding:6px 11px;border-radius:999px;background:#fff;color:var(--body)}
+.loc a{background:none;border:1px solid var(--line);color:var(--deep);font-weight:600}
+.galhint{font-size:12px;color:var(--sub);margin-top:6px;text-align:right}
+.clinic img{width:96px;height:120px;object-fit:cover;border-radius:10px}
+.clinic b{font-size:15px}
+.clinic p{font-size:13px;color:var(--body);margin-top:4px}
+.near{list-style:none;margin-top:14px;font-size:13.5px}
+.near li{display:flex;justify-content:space-between;padding:9px 0;border-top:1px solid var(--line)}
+.near em{font-style:normal;font-weight:700;color:var(--deep)}
+.notes{font-size:12px;color:var(--sub);line-height:1.7}
+footer{padding:20px 22px 28px;font-size:11px;color:var(--sub);line-height:1.6;border-top:1px solid var(--line)}
+
+/* 따라다니는 버튼 */
+.bar{position:fixed;left:50%;transform:translateX(-50%);bottom:0;width:100%;max-width:480px;z-index:30;background:#fff;border-top:1px solid var(--line);padding:8px 14px calc(10px + env(safe-area-inset-bottom))}
+.bar p{font-size:13px;font-weight:600;text-align:center;color:var(--body);margin-bottom:6px}
+.bar p.ctaline{margin:0 0 6px;font-size:12.5px;color:var(--ink)}
+.bar p b{color:var(--deep);font-size:15px;font-weight:900;font-variant-numeric:tabular-nums}
+.bar div{display:flex;gap:8px}
+.bar .btn{height:48px}
+.toast{position:fixed;left:50%;bottom:130px;transform:translateX(-50%);background:rgba(20,20,20,.9);color:#fff;font-size:13px;padding:9px 14px;border-radius:20px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}
+.toast.on{opacity:1}
+/* 대만판 추가: 라인 버튼·가격표·글꼴 */
+:root{--line-g:#06c755;--sans:"Noto Sans TC",Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.btn.ln{background:var(--line-g);font-size:16px}
+.hero h1 small{display:block;font-size:.5em;letter-spacing:-.01em;margin-top:6px;font-weight:800}
+.pricebox .cond{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:700;background:rgba(255,154,168,.16);color:#ffd9de;border:1px solid rgba(255,154,168,.4);border-radius:20px;padding:4px 10px;opacity:1}
+.chips0{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips0 span{font-size:12px;font-weight:700;border:1px solid rgba(255,255,255,.28);border-radius:20px;padding:5px 10px}
+.menu{margin-top:14px;border:1px solid rgba(255,255,255,.18);border-radius:16px;overflow:hidden}
+.menu a{display:flex;justify-content:space-between;align-items:center;padding:13px 16px;font-size:14px;color:rgba(255,255,255,.8)}
+.menu a+a{border-top:1px solid rgba(255,255,255,.14)}
+.menu a b{color:#fff;font-size:15px}
+.menu a small{display:block;font-size:11.5px;color:rgba(255,255,255,.5);margin-top:1px}
+.menu a.on{display:none}
+.menuh{font-size:13px;font-weight:800;margin-top:26px;color:var(--ac);letter-spacing:.04em}
+.ba .one{border-radius:14px;overflow:hidden}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="urg">首訪優惠 <span data-dl>12/15</span> 截止・剩 <b data-cd-text>—</b></div>
+
+<section class="hero">
+  <div class="top"><b>SEOUL GANGNAM</b><span>新論峴站 步行3分鐘</span></div>
+  <div class="ph"><img data-f="img" src="img/hero_b.jpg" alt=""><span class="ai">AI生成模特兒</span></div>
+  <div class="copy">
+    <div class="badge"><small>首訪限定</small><b data-f="badge">₩99K</b><i><span data-dl>12/15</span>前</i></div>
+    <p class="lead" data-f="lead"></p>
+    <h1 data-f="h1"></h1>
+  </div>
+  <div class="pricebox">
+    <p class="cdl">優惠倒數</p>
+    <div class="cd" data-cd><span><b>–</b><small>天</small></span><span><b>–</b><small>時</small></span><span><b>–</b><small>分</small></span><span><b>–</b><small>秒</small></span></div>
+    <div class="row"><span class="now" data-f="price"></span><span data-f="unit" style="font-size:15px;font-weight:700"></span></div>
+    <p>不含10%附加稅・以韓元結帳</p>
+    <span class="cond" data-f="cond"></span>
+    <p class="ctaline">加 <b>中文LINE</b> → 傳旅遊日期就能預約</p>
+    <div class="cta2"><a href="#" class="btn ln" data-ln><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.6 7.2 8.4 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-5.9c1.5-1.6 2.2-3.2 2.2-4.9C22 6.6 17.5 3 12 3z"/></svg>LINE 中文諮詢</a></div>
+    <div class="chips0"><span>每人限購一次</span><span>中文LINE諮詢</span><span>以韓元結帳</span></div>
+  </div>
+</section>
+
+<section class="sec cream">
+  <div class="eyebrow">你也是這樣嗎？</div>
+  <h2 data-f="wh2"></h2>
+  <ul class="worry" data-f="worry"></ul>
+  <p class="answer" data-f="answer"></p>
+</section>
+
+<section class="sec dark">
+  <div class="eyebrow" data-f="wey"></div>
+  <h2 data-f="what"></h2>
+  <ul class="pts" data-f="pts"></ul>
+</section>
+
+<section class="sec">
+  <div class="eyebrow">怎麼作用</div>
+  <h2 data-f="hh2"></h2>
+  <p class="s" data-f="hs"></p>
+  <div class="depth" data-f="depth"></div>
+  <div class="freq" data-f="freq"></div>
+</section>
+
+<section class="sec cream">
+  <div class="eyebrow">比較看看</div>
+  <h2 data-f="ch2"></h2>
+  <table class="cmp" data-f="cmp"></table>
+  <p class="fine">*感受與效果因人而異。</p>
+</section>
+
+<section class="sec">
+  <div class="eyebrow">想要的樣子</div>
+  <h2 data-f="bh2"></h2>
+  <div class="ba"><div><div class="pair"><em class="tag">AI示意圖</em><div><img data-f="bab" src="" alt="" loading="lazy"><span>Before</span></div><div><img data-f="baa" src="" alt="" loading="lazy"><span>After</span></div></div><p data-f="bap"></p></div></div>
+  <p class="fine">以上為AI生成的示意圖，用來說明療程想達到的變化，並非真實患者。效果因人而異。</p>
+</section>
+
+<section class="sec dark" id="price">
+  <div class="eyebrow">首訪優惠價</div>
+  <h2 data-f="eh2"></h2>
+  <div class="ev" data-f="ev"></div>
+  <p class="dead">優惠只到 <em data-dlz>12月15日</em></p>
+  <p class="cdl">優惠倒數</p>
+  <div class="cd" data-cd><span><b>–</b><small>天</small></span><span><b>–</b><small>時</small></span><span><b>–</b><small>分</small></span><span><b>–</b><small>秒</small></span></div>
+  <p class="ctaline">加 <b>中文LINE</b> → 傳旅遊日期就能預約</p>
+  <div class="cta2"><a href="#" class="btn ln" data-ln>LINE 中文諮詢</a></div>
+  <p class="menuh">其他首訪優惠</p>
+  <div class="menu" data-f="menu"></div>
+  <p class="fine" style="text-align:center">每人限購一次・不含10%附加稅・以韓元結帳</p>
+</section>
+
+<section class="sec cream">
+  <div class="eyebrow">預約方式</div>
+  <h2>三個步驟，<br><em>LINE上就搞定。</em></h2>
+  <div class="flow">
+    <div><b>1</b><span>LINE傳旅遊日期</span></div>
+    <div><b>2</b><span>幫你排好時段</span></div>
+    <div><b>3</b><span>到院諮詢・施打</span></div>
+  </div>
+  <p class="s">小提醒：出發前1～2週先預約，熱門時段很快就滿。</p>
+</section>
+
+<section class="sec">
+  <div class="eyebrow">常見問題</div>
+  <h2>傳LINE之前</h2>
+  <div data-f="faq"></div>
+  <details><summary>價格有包含附加稅嗎？</summary><p>不含。所有價格不含10%附加稅，以韓元結帳。</p></details>
+  <details><summary>可以用中文溝通嗎？</summary><p>可以。加LINE後用中文傳訊息，告訴我們旅遊日期就好。</p></details>
+  <details><summary>可以同時做其他療程嗎？</summary><p>可以，到院諮詢時一起討論。首訪優惠每人限購一次。</p></details>
+</section>
+
+<section class="sec cream">
+  <div class="eyebrow">院內環境</div>
+  <h2>到院前先看看<br><em>療程空間</em></h2>
+  <div class="loc"><span>新論峴站 7號出口 步行3分鐘</span><span>江南站 步行10分鐘</span><a href="#where">看地圖 ↓</a></div>
+  <div class="gal">
+    <figure><img src="img/g_room.jpg" alt="療程室" loading="lazy"><figcaption>獨立療程室</figcaption></figure>
+    <figure><img src="img/g_consult.jpg" alt="諮詢室" loading="lazy"><figcaption>一對一諮詢室</figcaption></figure>
+    <figure><img src="img/g_lobby.jpg" alt="大廳" loading="lazy"><figcaption>候診大廳</figcaption></figure>
+    <figure><img src="img/g_desk.jpg" alt="接待區" loading="lazy"><figcaption>接待櫃台</figcaption></figure>
+    <figure><img src="img/g_powder.jpg" alt="化妝室" loading="lazy"><figcaption>療程後補妝的化妝室</figcaption></figure>
+  </div>
+  <p class="galhint">左右滑動看更多 →</p>
+</section>
+
+<section class="sec" id="where" style="border-top:1px solid var(--line)">
+  <div class="eyebrow">地點</div>
+  <h2>首爾江南・<br><em>新論峴站</em> 步行3分鐘</h2>
+  <div class="clinic">
+    <div><b>江南大路69街 8・4樓</b><p>首爾 瑞草區<br>新論峴站 7號出口 步行3分鐘<br>醫療機構資訊於LINE諮詢時提供</p></div>
+  </div>
+  <img class="mapimg" src="img/map.jpg" alt="地圖：新論峴站 7號出口 步行3分鐘" loading="lazy">
+  <ul class="near">
+    <li><span>新論峴站 9號線・7號出口</span><em>3分鐘</em></li>
+    <li><span>江南站 2號線・新盆唐線</span><em>10分鐘</em></li>
+  </ul>
+</section>
+
+<section class="sec" style="padding-bottom:24px">
+  <p class="notes">・首訪優惠每人限購一次<br>・所有價格不含10%附加稅，以韓元結帳<br>・ONDA 優惠價最多適用至30KJ，超過部分每10KJ 77,000韓元<br>・水飛梭需搭配其他療程，不可單獨預約<br>・實際療程內容於到院諮詢時確認，效果因人而異<br>・施打後可能出現暫時性泛紅、腫脹或刺痛</p>
+</section>
+
+<footer>首爾江南 皮膚科・醫療機構資訊於LINE諮詢時提供<br>上方模特兒與前後對比圖皆為AI生成，並非真實患者。院內照片為實景。</footer>
+
+<div class="bar">
+  <p><span data-f="barp"></span>・剩 <b data-cd-text>—</b></p>
+  <div><a href="#" class="btn ln" data-ln><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.6 7.2 8.4 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-5.9c1.5-1.6 2.2-3.2 2.2-4.9C22 6.6 17.5 3 12 3z"/></svg>LINE 中文諮詢・領首訪價</a></div>
+</div>
+</div>
+<script>
+// 2026-11-24 Claude: 영미권 XERF 랜딩(성과 좋음) 뼈대 그대로, 대만 번체판. ?t=rejuran(기본)|onda|ulthera 로 상품 전환.
+// 병원명·평점·후기 수·할인율·바깥 링크 없음(사용자 규칙). 버튼은 LINE LIFF 하나(전환 추적은 LIFF 쪽, 스킬 line-capi-setup).
+const LIFF = "https://liff.line.me/2012294400-1oQm2T7j";
+// 마감(한국 시간). 임시값 — 끝날 때쯤 이 한 줄만 늦추면 화면의 날짜·카운트다운이 다 따라 바뀐다(11/24 사용자: 야금야금 늘림)
+const DEADLINE = new Date("2026-12-15T23:59:59+09:00").getTime();
+const IMG = "img/";
+const DK = new Date(DEADLINE + 9 * 36e5), DM = DK.getUTCMonth() + 1, DDAY = DK.getUTCDate();
+const D = {
+  rejuran: {
+    img: "hero_b.jpg", badge: "₩99K", lead: "來首爾玩順便打一針，<br>素顏也透亮。",
+    h1: "麗珠蘭<br><em>鮭魚針 2cc</em><small>Rejuran</small>", price: "₩99,000", unit: "2cc", cond: "初訪限定・每人一次",
+    wh2: "皮膚越來越薄，<br><em>上妝一直浮粉？</em>",
+    worry: [["「粉底怎麼擦都卡紋。」", "乾燥、細紋、上妝不服貼"], ["「毛孔和暗沉越來越明顯。」", "保養品擦再多也一樣"], ["「在首爾只待幾天。」", "沒時間休息恢復"]],
+    answer: "鮭魚針就是為這個而生。",
+    wey: "什麼是鮭魚針", what: "從裡面<br><em>把皮膚養回來。</em>",
+    pts: [["修復變薄的皮膚", "幫助受損、乾燥的皮膚恢復彈性"], ["膚質、細紋、毛孔", "整體膚質變細、上妝更服貼"], ["隔天就能上妝", "針孔小、恢復快・因人而異"]],
+    hh2: "打進真皮層，<br><em>全臉均勻注射。</em>", hs: "麗珠蘭是韓國代表性的皮膚修復針劑，以細針均勻注射到全臉，從底層改善膚質。",
+    depth: [["表皮", "光澤・水潤感", "上妝更服貼"], ["真皮", "細紋・毛孔", "皮膚變厚實"], ["全臉", "2cc 均勻注射", "約20～30分鐘"]],
+    freq: [["2cc", "全臉用量"], ["約30分", "含敷麻"]],
+    ch2: "跟水光針<br><em>差在哪？</em>", cmp: [["一般水光針", "鮭魚針"], ["目的", "補水", "修復＋補水"], ["適合", "乾燥", "變薄・細紋・毛孔"], ["感覺", "水潤一陣子", "膚質慢慢變好*"]],
+    bh2: "細緻、透亮的<br><em>素顏膚質。</em>", ba: "rejuran", bap: "膚質、毛孔與光澤",
+    eh2: "鮭魚針 2cc<br><span style=\"color:var(--ac)\">₩99,000</span>", ev: [["療程", "麗珠蘭 鮭魚針"], ["用量", "全臉 2cc"], ["首訪價", "₩99,000", 1]],
+    barp: "麗珠蘭 鮭魚針 2cc ₩99,000",
+    faq: [["會痛嗎？", "施打前會先敷麻藥，大多數人可以接受。感受因人而異。"], ["多久可以上妝？", "通常隔天就能上妝，可能有暫時性的小針孔或泛紅。"]]
+  },
+  onda: {
+    img: "hero_c.jpg", badge: "₩39K", lead: "不痛、不用休息，<br>逛街前就能做。",
+    h1: "ONDA<br><em>超微波 10KJ</em><small>微波減脂・緊緻</small>", price: "₩39,000", unit: "10KJ", cond: "優惠價最多適用至30KJ",
+    wh2: "臉頰肉肉的，<br><em>拍照總要找側臉？</em>",
+    worry: [["「臉頰和下巴的肉一直在。」", "瘦了臉也不見小"], ["「不想打針、也不想痛。」", "想找溫和一點的方式"], ["「在首爾只待幾天。」", "沒時間休息恢復"]],
+    answer: "ONDA 就是為這個而生。",
+    wey: "什麼是 ONDA", what: "用微波<br><em>雕塑臉部線條。</em>",
+    pts: [["針對臉頰、下巴肉", "微波能量作用在脂肪層"], ["不用打針、沒有傷口", "探頭在皮膚上滑動，附冷卻"], ["做完就能去逛街", "大多數人馬上恢復日常・因人而異"]],
+    hh2: "微波能量，<br><em>直達脂肪層。</em>", hs: "ONDA 以微波能量作用在皮下脂肪層，同時兼顧緊緻，探頭附冷卻設計，過程溫和。",
+    depth: [["表皮", "冷卻保護", "減少不適感"], ["真皮", "緊緻", "皮膚更有彈性"], ["脂肪層", "臉頰・下巴肉", "線條更俐落"]],
+    freq: [["10KJ", "₩39,000"], ["超過30KJ", "每10KJ ₩77,000"]],
+    ch2: "跟一般電波<br><em>差在哪？</em>", cmp: [["一般電波", "ONDA"], ["能量", "射頻 RF", "微波"], ["重點", "緊緻", "臉頰肉＋緊緻"], ["感覺", "較熱", "附冷卻・較溫和*"]],
+    bh2: "更俐落的<br><em>下顎線條。</em>", ba: "onda", bap: "臉頰與下顎線條",
+    eh2: "ONDA 10KJ<br><span style=\"color:var(--ac)\">₩39,000</span>", ev: [["優惠價", "最多至 30KJ"], ["超過30KJ", "每10KJ ₩77,000"], ["首訪價・10KJ", "₩39,000", 1]],
+    barp: "ONDA 10KJ ₩39,000",
+    faq: [["會痛嗎？", "探頭附冷卻，大多數人覺得溫溫的。感受因人而異。"], ["要做幾KJ？", "到院諮詢時依臉型建議。優惠價最多適用至30KJ，超過部分每10KJ 77,000韓元。"]]
+  },
+  ulthera: {
+    img: "hero_a.jpg", badge: "₩490K", lead: "來首爾一趟，<br>把下顎線找回來。",
+    h1: "美版音波<br><em>極線音波 300發</em><small>Ulthera Prime</small>", price: "₩490,000", unit: "300發", cond: "含舒眠麻醉 ₩590,000",
+    wh2: "綁起馬尾的時候，<br><em>下顎線還在嗎？</em>",
+    worry: [["「拍照下巴線越來越模糊。」", "臉頰和下顎線開始往下"], ["「想拉提，但怕痛。」", "可以選舒眠麻醉"], ["「在首爾只待幾天。」", "沒時間休息恢復"]],
+    answer: "極線音波就是為這個而生。",
+    wey: "什麼是極線音波", what: "聚焦超音波，<br><em>拉提到筋膜層。</em>",
+    pts: [["拉提、緊緻輪廓", "聚焦超音波作用在深層筋膜"], ["不用開刀、沒有傷口", "探頭貼在皮膚上施打"], ["怕痛可以選舒眠", "含舒眠麻醉 ₩590,000"]],
+    hh2: "看得到的超音波，<br><em>打到該打的深度。</em>", hs: "美國原廠 Ulthera Prime 可以邊看超音波影像邊施打，依部位調整深度。",
+    depth: [["淺層", "細紋・膚質", "1.5mm"], ["真皮", "緊緻", "3.0mm"], ["筋膜層", "拉提輪廓", "4.5mm"]],
+    freq: [["300發", "₩490,000"], ["含舒眠", "₩590,000"]],
+    ch2: "拉提療程<br><em>都一樣嗎？</em>", cmp: [["一般拉提", "Ulthera Prime"], ["深度", "較淺", "可到筋膜層"], ["施打", "憑經驗", "邊看超音波影像*"], ["怕痛", "忍耐", "可選舒眠麻醉"]],
+    bh2: "更清楚的<br><em>下顎線。</em>", ba: "onda", bap: "臉頰與下顎線條",
+    eh2: "極線音波 300發<br><span style=\"color:var(--ac)\">₩490,000</span>", ev: [["含舒眠麻醉", "₩590,000"], ["部位", "全臉・下顎線"], ["首訪價・300發", "₩490,000", 1]],
+    barp: "美版音波 300發 ₩490,000",
+    faq: [["會痛嗎？", "會有酸痛感。怕痛可以選擇舒眠麻醉（₩590,000）。"], ["舒眠要注意什麼？", "施打前需空腹，結束後休息一下再離開。詳細於LINE說明。"]]
+  }
+};
+const MORE = [["", "皮秒雷射", "首次體驗1次", "₩9,900"], ["", "水飛梭 Aqua Peel", "首次體驗1次・需搭配其他療程", "₩9,900"], ["", "除皺肉毒", "表情紋", "₩19,000"], ["onda", "ONDA 超微波", "10KJ・最多至30KJ", "₩39,000"], ["", "LaLa Peel 第四代煥膚", "pH5.5 溫和換膚", "₩49,000"], ["", "黃金微針 Potenza", "毛孔・全臉", "₩49,000"], ["", "Olidia 膠原增生針", "1cc", "₩49,000"], ["rejuran", "麗珠蘭 鮭魚針", "2cc", "₩99,000"], ["ulthera", "美版極線音波 Ulthera", "300發・含舒眠 ₩590,000", "₩490,000"]];
+const Q = new URLSearchParams(location.search);
+const T = D[Q.get("t")] ? Q.get("t") : "rejuran", P = D[T];
+const $ = k => document.querySelectorAll(`[data-f="${k}"]`);
+const set = (k, html) => $(k).forEach(e => e.innerHTML = html);
+document.querySelector('[data-f="img"]').src = IMG + P.img;
+["badge", "lead", "h1", "price", "unit", "cond", "wh2", "answer", "wey", "what", "hh2", "hs", "ch2", "bh2", "bap", "eh2", "barp"].forEach(k => set(k, P[k]));
+set("worry", P.worry.map(([a, b]) => `<li>${a}<span>${b}</span></li>`).join(""));
+set("pts", P.pts.map(([a, b], i) => `<li><i>${i + 1}</i><div><b>${a}</b><span>${b}</span></div></li>`).join(""));
+set("depth", P.depth.map(([a, b, c], i) => `<div class="lay l${i + 1}"><b>${a}</b><span>${b}<small>${c}</small></span></div>`).join(""));
+set("freq", P.freq.map(([a, b]) => `<div><b>${a}</b><span>${b}</span></div>`).join(""));
+set("cmp", `<tr><th>${P.cmp[0][0]}</th><th>${P.cmp[0][1]}</th></tr>` + P.cmp.slice(1).map(([k, a, b]) => `<tr><td><small>${k}</small>${a}</td><td><small>${k}</small>${b}</td></tr>`).join(""));
+document.querySelector('[data-f="bab"]').src = IMG + `ba_${P.ba}_b.jpg`;
+document.querySelector('[data-f="baa"]').src = IMG + `ba_${P.ba}_a.jpg`;
+set("ev", P.ev.map(([a, b, hit]) => `<div class="r${hit ? " hit" : ""}"><span>${a}</span><b>${b}</b></div>`).join(""));
+set("menu", MORE.map(([k, n, s, p]) => `<a${k ? ` href="?t=${k}"` : ""}${k === T ? ' class="on"' : ""}><span>${n}${s ? `<small>${s}</small>` : ""}</span><b>${p}</b></a>`).join(""));
+set("faq", P.faq.map(([q, a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join(""));
+document.querySelectorAll("[data-dl]").forEach(e => e.textContent = `${DM}/${DDAY}`);
+document.querySelectorAll("[data-dlz]").forEach(e => e.textContent = `${DM}月${DDAY}日`);
+document.title = P.barp.replace(/<[^>]+>/g, "") + "・首爾江南 首訪優惠";
+
+// LINE 버튼: 광고 주소의 fbclid·utm을 LIFF로 그대로 넘긴다(LIFF 페이지가 fbp/fbclid를 묶어 전환 API로 보냄)
+const lq = new URLSearchParams({ lp: "landing_" + T });
+["fbclid", "utm_source", "utm_campaign", "utm_content"].forEach(k => Q.get(k) && lq.set(k, Q.get(k)));
+document.querySelectorAll("[data-ln]").forEach(a => { a.href = `${LIFF}?${lq}`; });
+
+const cdBoxes = document.querySelectorAll("[data-cd]"), cdTexts = document.querySelectorAll("[data-cd-text]");
+const p2 = n => String(n).padStart(2, "0");
+const tick = () => {
+  const left = Math.max(0, DEADLINE - Date.now());
+  const d = Math.floor(left / 864e5), h = Math.floor(left / 36e5) % 24, m = Math.floor(left / 6e4) % 60, s = Math.floor(left / 1e3) % 60;
+  cdBoxes.forEach(b => { const sp2 = b.querySelectorAll("span b"); sp2[0].textContent = d; sp2[1].textContent = p2(h); sp2[2].textContent = p2(m); sp2[3].textContent = p2(s); });
+  cdTexts.forEach(t => { t.textContent = left ? `${d}天 ${p2(h)}:${p2(m)}:${p2(s)}` : "已結束"; });
+};
+tick(); setInterval(tick, 1000);
+</script>
+</body>
+</html>
