@@ -20,7 +20,6 @@ button{font:inherit;border:0;cursor:pointer}
 /* ① 표지 (compare3 A 그대로) */
 .hero{position:relative;aspect-ratio:390/440;overflow:hidden;background:#cfd1d5}
 .hero img{width:100%;height:100%;object-fit:cover}
-.hero .half{position:absolute;top:0;bottom:0;right:0;backdrop-filter:brightness(.78) saturate(.7) sepia(.25) contrast(.94);-webkit-backdrop-filter:brightness(.78) saturate(.7) sepia(.25) contrast(.94)}
 .copy{position:absolute;left:4.6%;bottom:3.6%;z-index:2}
 .copy h1{font-size:clamp(40px,12.8vw,60px);font-weight:900;line-height:1.04;letter-spacing:-.055em;color:#141619;text-shadow:0 0 14px rgba(230,232,236,.55)}
 .copy h1 .g{color:#6a6d74}
@@ -192,8 +191,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 
 <!-- ① 표지 -->
 <section>
-  <div class="hero" id="hero"><img src="img/hero.jpg" alt="" data-nx=".5">
-    <div class="half"></div>
+  <div class="hero" id="hero"><img src="img/hero.jpg" alt="">
     <div class="copy">
       <h1><span class="g">眠って</span><br>受ける</h1>
       <span class="lb">ウルセラ 300ショット・ソウル江南</span>
@@ -332,11 +330,6 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 var LIFF = "https://liff.line.me/2012269773-ndbeZt7j", LP = "landing_ulthera", DEADLINE = "2026-12-15T23:59:59+09:00";
 (function(){
   var R = document, Q = new URLSearchParams(location.search);
-  var hero = R.getElementById("hero"), himg = hero.querySelector("img"), half = hero.querySelector(".half");
-  function place(){ if (!himg.naturalWidth) return; var W = hero.clientWidth, H = hero.clientHeight, s = Math.max(W / himg.naturalWidth, H / himg.naturalHeight), rw = himg.naturalWidth * s;
-    half.style.left = ((W - rw) / 2 + rw * parseFloat(himg.dataset.nx)) + "px"; }
-  himg.complete ? place() : himg.addEventListener("load", place); window.addEventListener("resize", place);
-
   var tpl = R.getElementById("tpl");
   R.querySelectorAll("[data-cta]").forEach(function(h){ h.appendChild(tpl.content.cloneNode(true)); });
   var lq = new URLSearchParams({ lp: LP });
