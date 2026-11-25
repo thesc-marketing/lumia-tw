@@ -88,6 +88,26 @@ button{font:inherit;border:0;cursor:pointer}
 .step .tx p{margin-top:6px;font-size:13.5px;line-height:1.55;color:var(--sub);letter-spacing:-.03em}
 .proc .ai-note{color:rgba(255,255,255,.6);margin-top:10px;text-align:right}
 
+/* ④ 전후 (2026-11-25) */
+.bfaf{background:#fff;padding:46px 18px 36px;text-align:center}
+.bfaf .q{font-size:15.5px;font-weight:600;letter-spacing:-.04em;color:var(--sub)}
+.bfaf .q b{color:var(--blue);font-weight:900}
+.bfaf h2{font-size:30px;font-weight:900;letter-spacing:-.06em;margin-top:4px;color:var(--navy)}
+.bfaf .pair{display:grid;grid-template-columns:1fr 1fr;gap:3px;border-radius:6px;overflow:hidden;position:relative;margin-top:22px}
+.bfaf .pair div{position:relative}
+.bfaf .pair img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.bfaf .pair span{position:absolute;left:8px;bottom:8px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:rgba(20,26,46,.65);padding:3px 9px;border-radius:20px}
+.bfaf .pair div:last-child span{background:var(--blue)}
+.bfaf .tag{position:absolute;top:8px;right:8px;z-index:2;font-size:10px;font-style:normal;background:rgba(0,0,0,.5);color:#fff;padding:3px 8px;border-radius:20px}
+.bfaf .cap{font-size:15px;font-weight:800;color:var(--navy);margin-top:12px}
+.bfaf .ai-note{display:block;margin-top:8px;line-height:1.5}
+.proc .flow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:24px}
+.proc .flow div{background:#fff;border-radius:4px;padding:16px 6px 14px;box-shadow:0 10px 24px rgba(10,20,60,.22)}
+.proc .flow b{display:block;font-size:22px;font-weight:900;color:var(--blue);line-height:1}
+.proc .flow p{margin-top:8px;font-size:12.5px;font-weight:700;line-height:1.4;color:var(--navy);letter-spacing:-.04em}
+.proc .tip{margin-top:16px;font-size:13px;line-height:1.6;color:#dbe5ff}
+.proc .btn{margin-top:18px}
+
 /* ⑤ 정품 */
 .real{padding:46px 0 0;text-align:center;background:#fff}
 .real .badge{display:inline-flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 7px #e4eaf8}
@@ -240,16 +260,26 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 </section>
 
 <!-- ④ 시술 과정 -->
+<!-- ④ 전후 -->
+<section class="bfaf">
+  <p class="q"><b>「浮くメイク」</b>から<b>「すっぴんツヤ肌」</b>へ</p>
+  <h2>目指す仕上がり</h2>
+  <div class="pair"><em class="tag">AIイメージ</em><div><img src="img/ba_b.jpg" alt="" loading="lazy"><span>Before</span></div><div><img src="img/ba_a.jpg" alt="" loading="lazy"><span>After</span></div></div>
+  <p class="cap">きめ・毛穴・ツヤ</p>
+  <p class="ai-note">*施術で目指す変化を説明するためのAI生成イメージで、実際の患者ではありません。効果には個人差があります。</p>
+</section>
+
+<!-- ④-2 예약 흐름 -->
 <section class="proc">
-  <p class="q"><b>「旅行のついでに」</b>受ける</p>
-  <h2>リジュランの流れ</h2>
-  <div class="step"><div class="ph"><img src="img/g_consult.jpg" alt=""></div>
-    <div class="tx"><b>STEP. 01</b><p>来院後、肌の状態を見ながら注入する部位と量を決めます。</p></div></div>
-  <div class="step"><div class="ph"><img src="img/proc.jpg" alt=""></div>
-    <div class="tx"><b>STEP. 02</b><p>麻酔クリームで落ち着かせてから、顔全体に2ccをまんべんなく注入します（約20〜30分）。</p></div></div>
-  <div class="step"><div class="ph"><img src="img/next.jpg" alt=""></div>
-    <div class="tx"><b>STEP. 03</b><p>針あとが小さく、翌日からメイクOK。そのまま観光やお買い物へ。</p></div></div>
-  <p class="ai-note">*院内写真は実際の写真・人物はAI生成イメージ</p>
+  <p class="q"><b>「LINEだけ」</b>で完了</p>
+  <h2>ご予約の流れ</h2>
+  <div class="flow">
+    <div><b>01</b><p>LINEで<br>希望日を送る</p></div>
+    <div><b>02</b><p>空き時間を<br>日本語でご案内</p></div>
+    <div><b>03</b><p>ご来院・<br>カウンセリング・施術</p></div>
+  </div>
+  <p class="tip">人気の時間帯はすぐ埋まります。<br>1〜2週間前までのご予約がおすすめです。</p>
+  <a class="btn ln" data-ln href="#">LINEで空き時間を聞く</a>
 </section>
 
 <!-- ⑤ 정품 -->
@@ -275,7 +305,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
       <li><b>化粧のりが</b><br>悪くなってきた方</li>
       <li><b>毛穴・くすみ</b>が<br>気になってきた方</li>
       <li><b>乾燥・小じわ</b>が<br>増えてきた方</li>
-      <li><b>ソウル旅行の合間</b>に<br>受けたい方</li>
+      <li><b>ダウンタイム</b>を<br>取りたくない方</li>
     </ul>
     <span class="ai-note">*画像はAI生成イメージ</span>
   </div>
