@@ -187,6 +187,28 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 .copy .pr .u{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.5)}
 .copy .pr .p{color:#8fb0ff;text-shadow:0 2px 14px rgba(0,0,0,.35)}
 
+/* ③-2 야간 진료 */
+.night{background:radial-gradient(ellipse at 80% 0%,#33407a 0%,#141a2e 58%,#0c1020 100%);color:#fff;text-align:center;padding:46px 18px 40px}
+.night .q{font-size:15px;font-weight:600;letter-spacing:-.03em;color:#c9d4f5}
+.night .q b{color:#ffd36b;font-weight:900}
+.night h2{font-size:38px;font-weight:900;letter-spacing:-.06em;line-height:1.12;margin-top:6px}
+.night h2 b{color:#ffd36b;font-size:50px}
+.night .s{margin-top:12px;font-size:14px;line-height:1.65;color:#dbe3fb}
+.night .s b{color:#ffd36b}
+.night .wk{margin:24px 4px 0;text-align:left}
+.night .ax{position:relative;height:16px;margin:0 46px 4px 26px;font-size:10px;color:#8ea6da}
+.night .ax span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.night .ax span:first-child{transform:none}
+.night .ax span:last-child{transform:translateX(-100%)}
+.night .d{display:flex;align-items:center;gap:8px;margin-top:6px}
+.night .d b{width:18px;font-size:14px;font-weight:800;color:#c9d4f5}
+.night .d i{flex:1;height:14px;border-radius:7px;background:rgba(255,255,255,.08);overflow:hidden}
+.night .d s{display:block;height:100%;border-radius:7px;background:#4a68b8}
+.night .d.n s{background:linear-gradient(90deg,#4a68b8 0 71.4%,#ffd36b 71.4%)}
+.night .d em{width:38px;font-size:12px;font-style:normal;font-weight:800;color:#8ea6da;text-align:right}
+.night .d.n b,.night .d.n em{color:#ffd36b}
+.night .fine{margin-top:14px;font-size:11px;color:#8ea6da}
+.night .btn{margin-top:18px}
 /* ④ 전후 (리쥬란 최종본과 같음) */
 .bfaf{background:#fff;padding:46px 18px 36px;text-align:center}
 .bfaf .q{font-size:15.5px;font-weight:600;letter-spacing:-.04em;color:var(--sub)}
@@ -233,7 +255,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 
 <!-- ① 표지 -->
 <section>
-  <div class="hero" id="hero"><img src="img/hero.jpg?v=11261449" alt="">
+  <div class="hero" id="hero"><img src="img/hero.jpg?v=11261501" alt="">
     <div class="copy">
       <h1><span class="g">切らずに</span><br>引き上げる</h1>
       <span class="lb">ウルセラ 300ショット・ソウル江南</span>
@@ -258,7 +280,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
   <span class="hand">最近、輪郭がぼやけてきた？</span>
   <h2>なぜ<span>ウルセラ</span>？</h2>
   <p>超音波画像で肌の層を確認しながら、<br>深いSMAS層まで狙って照射します。<br><b>切らずに、傷あとなしで輪郭を引き上げ、</b><br>施術後すぐに普段通り過ごせます。</p>
-  <img class="bg" src="img/why.jpg?v=11261449" alt=""><span class="ai-note">*画像はAI生成イメージ</span>
+  <img class="bg" src="img/why.jpg?v=11261501" alt=""><span class="ai-note">*画像はAI生成イメージ</span>
 </section>
 
 <!-- ③ 효과 -->
@@ -268,7 +290,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
   <h2><span class="gt">ウルセラ リフト</span></h2>
   <div class="orb">
     <div class="ring"></div>
-    <div class="c"><img src="img/c.jpg?v=11261449" alt=""></div>
+    <div class="c"><img src="img/c.jpg?v=11261501" alt=""></div>
     <div class="lb l1">フェイスライン<br>引き締め<small>jawline</small></div>
     <div class="lb l2">頬のたるみ<br>ケア<small>cheek lift</small></div>
     <div class="lb l3">肌のハリ・<br>弾力アップ<small>elasticity</small></div>
@@ -278,11 +300,30 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
   </div>
 </section>
 
+<!-- ③-2 야간 진료 -->
+<section class="night">
+  <p class="q">日本と<b>時差なし</b>・韓国時間</p>
+  <h2><b>夜12時</b>まで<br>受けられる</h2>
+  <p class="s">金・土・日・月は<b>24時まで</b>診療。<br>夕食のあとでも、そのままご来院いただけます。</p>
+  <div class="wk">
+    <div class="ax"><span>10:00</span><span style="left:71.4%">20:00</span><span style="left:100%">24:00</span></div>
+    <div class="d n"><b>月</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+    <div class="d"><b>火</b><i><s style="width:71.4%"></s></i><em>20:00</em></div>
+    <div class="d"><b>水</b><i><s style="width:71.4%"></s></i><em>20:00</em></div>
+    <div class="d"><b>木</b><i><s style="width:71.4%"></s></i><em>20:00</em></div>
+    <div class="d n"><b>金</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+    <div class="d n"><b>土</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+    <div class="d n"><b>日</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+  </div>
+  <p class="fine">※最終受付の時間はLINEでご案内します。</p>
+  <a class="btn ln" data-ln href="#">LINEで夜の空き時間を聞く</a>
+</section>
+
 <!-- ④ 전후 -->
 <section class="bfaf">
   <p class="q"><b>「ぼやけた輪郭」</b>から<b>「すっきりライン」</b>へ</p>
   <h2>目指す仕上がり</h2>
-  <div class="pair"><em class="tag">AIイメージ</em><div><img src="img/ba_b.jpg?v=11261449" alt="" loading="lazy"><span>Before</span></div><div><img src="img/ba_a.jpg?v=11261449" alt="" loading="lazy"><span>After</span></div></div>
+  <div class="pair"><em class="tag">AIイメージ</em><div><img src="img/ba_b.jpg?v=11261501" alt="" loading="lazy"><span>Before</span></div><div><img src="img/ba_a.jpg?v=11261501" alt="" loading="lazy"><span>After</span></div></div>
   <p class="cap">フェイスライン・あご下・頬</p>
   <p class="ai-note">*施術で目指す変化を説明するためのAI生成イメージで、実際の患者ではありません。効果には個人差があります。</p>
 </section>
@@ -307,7 +348,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
   <h2>アメリカ正規品<br>ウルセラ プライム</h2>
   <p>超音波画像で肌の層を確認しながら<br><b>部位ごとに深さを変えて</b>照射します。</p>
   <div class="skin">
-    <img src="img/layer.jpg?v=11261449" alt="">
+    <img src="img/layer.jpg?v=11261501" alt="">
     <div class="lab l1"><b>1.5mm</b><span>浅い層・肌質</span></div>
     <div class="lab l2"><b>3.0mm</b><span>真皮・引き締め</span></div>
     <div class="lab l3"><b>4.5mm</b><span>SMAS層・輪郭リフト</span></div>
@@ -321,7 +362,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 <section class="rec">
   <div class="head"><small>RECOMMEND</small><h2><span class="gt">こんな方に</span><span style="color:var(--blue)">おすすめ</span></h2></div>
   <div class="body">
-    <img src="img/rec.jpg?v=11261449" alt="">
+    <img src="img/rec.jpg?v=11261501" alt="">
     <ul>
       <li><b>フェイスラインが</b><br>ぼやけてきた方</li>
       <li><b>頬のたるみ</b>で<br>疲れて見える方</li>
@@ -339,11 +380,11 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
     <p>相談室と個室の施術室、施術後に身だしなみを<br>整えるパウダールームまで揃っています。</p>
   </div>
   <div class="grid">
-    <figure class="w"><img src="img/g_lobby.jpg?v=11261449" alt=""><figcaption>待合スペース</figcaption></figure>
-    <figure><img src="img/g_consult.jpg?v=11261449" alt=""><figcaption>相談室</figcaption></figure>
-    <figure><img src="img/g_room.jpg?v=11261449" alt=""><figcaption>施術室</figcaption></figure>
-    <figure><img src="img/g_desk.jpg?v=11261449" alt=""><figcaption>受付</figcaption></figure>
-    <figure><img src="img/g_powder.jpg?v=11261449" alt=""><figcaption>パウダールーム</figcaption></figure>
+    <figure class="w"><img src="img/g_lobby.jpg?v=11261501" alt=""><figcaption>待合スペース</figcaption></figure>
+    <figure><img src="img/g_consult.jpg?v=11261501" alt=""><figcaption>相談室</figcaption></figure>
+    <figure><img src="img/g_room.jpg?v=11261501" alt=""><figcaption>施術室</figcaption></figure>
+    <figure><img src="img/g_desk.jpg?v=11261501" alt=""><figcaption>受付</figcaption></figure>
+    <figure><img src="img/g_powder.jpg?v=11261501" alt=""><figcaption>パウダールーム</figcaption></figure>
   </div>
 </section>
 
@@ -351,7 +392,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 <section class="way">
   <span class="hand">アクセス</span>
   <h2>新論峴駅 7番出口 徒歩3分</h2>
-  <div class="map"><img src="img/map.jpg?v=11261449" alt="地図：新論峴駅 7番出口 徒歩3分"></div>
+  <div class="map"><img src="img/map.jpg?v=11261501" alt="地図：新論峴駅 7番出口 徒歩3分"></div>
   <dl class="rows">
     <div><dt>地下鉄</dt><dd>9号線 新論峴駅 7番出口から徒歩3分</dd></div>
     <div><dt>徒歩</dt><dd>江南駅から徒歩約10分</dd></div>
@@ -360,12 +401,12 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 
 <!-- ⑨ 프로모션 + 라인 -->
 <section id="apply">
-  <div class="promo">特価期間：〜 2026.12.15 まで</div>
+  <div class="promo">特価期間：〜 2026.12.31 まで</div>
   <div class="apply" data-cta></div>
 </section>
 
 <footer>
-  本特価は2026年12月15日までの先着順で、予告なく終了する場合があります。価格は韓国ウォン・VAT別・1回施術です。効果には個人差があり、施術後に赤み・腫れ・痛みなどが出ることがあります。詳しくはLINE相談時にご案内します。人物画像はAI生成イメージで、実際の施術結果ではありません。院内写真は実際の写真です。
+  本特価は2026年12月31日までの先着順で、予告なく終了する場合があります。価格は韓国ウォン・VAT別・1回施術です。効果には個人差があり、施術後に赤み・腫れ・痛みなどが出ることがあります。詳しくはLINE相談時にご案内します。人物画像はAI生成イメージで、実際の施術結果ではありません。院内写真は実際の写真です。
 </footer>
 </div>
 
@@ -381,7 +422,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 
 <script>
 // 2026-11-25 Claude: 버튼은 일본 LINE LIFF 하나(스킬 line-capi-setup). 광고 주소의 fbclid·utm을 그대로 넘긴다.
-var LIFF = "https://line.me/R/app/2012269773-ndbeZt7j", LP = "landing_ulthera", DEADLINE = "2026-12-15T23:59:59+09:00";
+var LIFF = "https://line.me/R/app/2012269773-ndbeZt7j", LP = "landing_ulthera", DEADLINE = "2026-12-31T23:59:59+09:00";
 (function(){
   var R = document, Q = new URLSearchParams(location.search);
   var tpl = R.getElementById("tpl");
