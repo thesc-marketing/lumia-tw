@@ -88,6 +88,28 @@ button{font:inherit;border:0;cursor:pointer}
 .step .tx p{margin-top:6px;font-size:13.5px;line-height:1.55;color:var(--sub);letter-spacing:-.03em}
 .proc .ai-note{color:rgba(255,255,255,.6);margin-top:10px;text-align:right}
 
+/* ③-2 야간 진료 */
+.night{background:radial-gradient(ellipse at 80% 0%,#33407a 0%,#141a2e 58%,#0c1020 100%);color:#fff;text-align:center;padding:46px 18px 40px}
+.night .q{font-size:15px;font-weight:600;letter-spacing:-.03em;color:#c9d4f5}
+.night .q b{color:#ffd36b;font-weight:900}
+.night h2{font-size:38px;font-weight:900;letter-spacing:-.06em;line-height:1.12;margin-top:6px}
+.night h2 b{color:#ffd36b;font-size:50px}
+.night .s{margin-top:12px;font-size:14px;line-height:1.65;color:#dbe3fb}
+.night .s b{color:#ffd36b}
+.night .wk{margin:24px 4px 0;text-align:left}
+.night .ax{position:relative;height:16px;margin:0 46px 4px 26px;font-size:10px;color:#8ea6da}
+.night .ax span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.night .ax span:first-child{transform:none}
+.night .ax span:last-child{transform:translateX(-100%)}
+.night .d{display:flex;align-items:center;gap:8px;margin-top:6px}
+.night .d b{width:18px;font-size:14px;font-weight:800;color:#c9d4f5}
+.night .d i{flex:1;height:14px;border-radius:7px;background:rgba(255,255,255,.08);overflow:hidden}
+.night .d s{display:block;height:100%;border-radius:7px;background:#4a68b8}
+.night .d.n s{background:linear-gradient(90deg,#4a68b8 0 71.4%,#ffd36b 71.4%)}
+.night .d em{width:38px;font-size:12px;font-style:normal;font-weight:800;color:#8ea6da;text-align:right}
+.night .d.n b,.night .d.n em{color:#ffd36b}
+.night .fine{margin-top:14px;font-size:11px;color:#8ea6da}
+.night .btn{margin-top:18px}
 /* ④ 전후 (2026-11-25) */
 .bfaf{background:#fff;padding:46px 18px 36px;text-align:center}
 .bfaf .q{font-size:15.5px;font-weight:600;letter-spacing:-.04em;color:var(--sub)}
@@ -283,6 +305,25 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 </section>
 
 <!-- ④ 시술 과정 -->
+<!-- ③-2 야간 진료 -->
+<section class="night">
+  <p class="q">日本と<b>時差なし</b>・韓国時間</p>
+  <h2><b>夜12時</b>まで<br>受けられる</h2>
+  <p class="s">金・土・日・月は<b>24時まで</b>診療。<br>夕食のあとでも、そのままご来院いただけます。</p>
+  <div class="wk">
+    <div class="ax"><span>10:00</span><span style="left:71.4%">20:00</span><span style="left:100%">24:00</span></div>
+    <div class="d n"><b>月</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+    <div class="d"><b>火</b><i><s style="width:71.4%"></s></i><em>20:00</em></div>
+    <div class="d"><b>水</b><i><s style="width:71.4%"></s></i><em>20:00</em></div>
+    <div class="d"><b>木</b><i><s style="width:71.4%"></s></i><em>20:00</em></div>
+    <div class="d n"><b>金</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+    <div class="d n"><b>土</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+    <div class="d n"><b>日</b><i><s style="width:100.0%"></s></i><em>24:00</em></div>
+  </div>
+  <p class="fine">※最終受付の時間はLINEでご案内します。</p>
+  <a class="btn ln" data-ln href="#">LINEで夜の空き時間を聞く</a>
+</section>
+
 <!-- ④ 전후 -->
 <section class="bfaf">
   <p class="q"><b>「浮くメイク」</b>から<b>「すっぴんツヤ肌」</b>へ</p>
@@ -365,12 +406,12 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 
 <!-- ⑨ 프로모션 + 라인 -->
 <section id="apply">
-  <div class="promo">特価期間：〜 2026.12.15 まで</div>
+  <div class="promo">特価期間：〜 2026.12.31 まで</div>
   <div class="apply" data-cta></div>
 </section>
 
 <footer>
-  本特価は2026年12月15日までの先着順で、予告なく終了する場合があります。価格は韓国ウォン・VAT別・1回施術です。効果には個人差があり、施術後に赤み・腫れ・針あと・内出血などが出ることがあります。施術の注意事項はLINE相談時にご案内します。人物画像はAI生成イメージで、実際の施術結果ではありません。院内写真は実際の写真です。
+  本特価は2026年12月31日までの先着順で、予告なく終了する場合があります。価格は韓国ウォン・VAT別・1回施術です。効果には個人差があり、施術後に赤み・腫れ・針あと・内出血などが出ることがあります。施術の注意事項はLINE相談時にご案内します。人物画像はAI生成イメージで、実際の施術結果ではありません。院内写真は実際の写真です。
 </footer>
 </div>
 
@@ -386,7 +427,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 
 <script>
 // 2026-11-25 Claude: 버튼은 일본 LINE LIFF 하나(스킬 line-capi-setup). 광고 주소의 fbclid·utm을 그대로 넘긴다.
-var LIFF = "https://line.me/R/app/2012269773-ndbeZt7j", LP = "landing_rejuran", DEADLINE = "2026-12-15T23:59:59+09:00";
+var LIFF = "https://line.me/R/app/2012269773-ndbeZt7j", LP = "landing_rejuran", DEADLINE = "2026-12-31T23:59:59+09:00";
 (function(){
   var R = document, Q = new URLSearchParams(location.search);
   var tpl = R.getElementById("tpl");
