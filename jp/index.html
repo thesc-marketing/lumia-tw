@@ -350,7 +350,7 @@ footer{padding:20px 22px 28px;font-size:11px;color:var(--sub);line-height:1.6;bo
 <script>
 // 2026-11-25 Claude: 대만 번체판(영미권 XERF 뼈대)을 일본어로 옮긴 판. ?t=ulthera(기본)|rejuran|onda 로 상품 전환.
 // 병원명·평점·후기 수·할인율·바깥 링크 없음(사용자 규칙). 버튼은 일본 LINE LIFF 하나(스킬 line-capi-setup, @811edwqi).
-const LIFF = "https://liff.line.me/2012269773-ndbeZt7j";
+const LIFF = "https://line.me/R/app/2012269773-ndbeZt7j";
 // 마감(한국 시간). 임시값 — 끝날 때쯤 이 한 줄만 늦추면 날짜·카운트다운이 다 따라 바뀐다
 const DEADLINE = new Date("2026-12-15T23:59:59+09:00").getTime();
 const IMG = "https://thesc-marketing.github.io/lumia-tw/lp/img/";
@@ -443,6 +443,27 @@ const tick = () => {
   cdTexts.forEach(t => { t.textContent = left ? `${d}日 ${p2(h)}:${p2(m)}:${p2(s)}` : "終了"; });
 };
 tick(); setInterval(tick, 1000);
+</script>
+<script>
+(function(){
+  var PX = "1975778206737948";
+  if (!window.fbq) { !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); }
+  fbq("init", PX);
+  fbq("trackSingle", PX, "PageView");
+  var RT = (typeof R !== "undefined" && R) ? R : document;
+  function ck(n){ var m = document.cookie.match(new RegExp("(?:^|; )" + n + "=([^;]*)")); return m ? decodeURIComponent(m[1]) : ""; }
+  RT.addEventListener("click", function(e){
+    var a = e.target && e.target.closest ? e.target.closest("[data-ln]") : null;
+    if (!a) return;
+    try { fbq("trackSingle", PX, "Lead", { content_name: new URL(a.href).searchParams.get("lp") || "" }); } catch (x) {}
+    try {
+      var u = new URL(a.href), fbp = ck("_fbp"), fbc = ck("_fbc");
+      if (fbp) u.searchParams.set("fbp", fbp);
+      if (fbc) u.searchParams.set("fbc", fbc);
+      a.href = u.toString();
+    } catch (x) {}
+  }, true);
+})();
 </script>
 </body>
 </html>

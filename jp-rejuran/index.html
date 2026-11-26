@@ -386,7 +386,7 @@ body{font-family:"Noto Sans JP",sans-serif;word-break:normal;line-break:strict;o
 
 <script>
 // 2026-11-25 Claude: 버튼은 일본 LINE LIFF 하나(스킬 line-capi-setup). 광고 주소의 fbclid·utm을 그대로 넘긴다.
-var LIFF = "https://liff.line.me/2012269773-ndbeZt7j", LP = "landing_rejuran", DEADLINE = "2026-12-15T23:59:59+09:00";
+var LIFF = "https://line.me/R/app/2012269773-ndbeZt7j", LP = "landing_rejuran", DEADLINE = "2026-12-15T23:59:59+09:00";
 (function(){
   var R = document, Q = new URLSearchParams(location.search);
   var tpl = R.getElementById("tpl");
@@ -404,6 +404,27 @@ var LIFF = "https://liff.line.me/2012269773-ndbeZt7j", LP = "landing_rejuran", D
   }
   tick(); setInterval(tick, 1000);
   setTimeout(function(){ R.getElementById("dock").classList.add("on"); }, 0);
+})();
+</script>
+<script>
+(function(){
+  var PX = "1975778206737948";
+  if (!window.fbq) { !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); }
+  fbq("init", PX);
+  fbq("trackSingle", PX, "PageView");
+  var RT = (typeof R !== "undefined" && R) ? R : document;
+  function ck(n){ var m = document.cookie.match(new RegExp("(?:^|; )" + n + "=([^;]*)")); return m ? decodeURIComponent(m[1]) : ""; }
+  RT.addEventListener("click", function(e){
+    var a = e.target && e.target.closest ? e.target.closest("[data-ln]") : null;
+    if (!a) return;
+    try { fbq("trackSingle", PX, "Lead", { content_name: new URL(a.href).searchParams.get("lp") || "" }); } catch (x) {}
+    try {
+      var u = new URL(a.href), fbp = ck("_fbp"), fbc = ck("_fbc");
+      if (fbp) u.searchParams.set("fbp", fbp);
+      if (fbc) u.searchParams.set("fbc", fbc);
+      a.href = u.toString();
+    } catch (x) {}
+  }, true);
 })();
 </script>
 </body></html>
